@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Forms</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<div id="html-forms" class="main-section">
+		<form action="somepage.php" method="get">
+			<div id="fn-container" class="form-elm">
+				<label for="FirstName">First name</label>
+				<input type="text" name="FirstName"placeholder="First name goes here">
+			</div>
+			<div id="In-container" class="form-elm">
+				<label for="LastName">Last Name</label>
+				<input type="text" name="LastName" id="LastName" placeholder="Enter your Last name here">
+			</div>
+			<div id="email-container" class="form-elm">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" value="example@g.com" readonly>
+			</div>
+			<div id="pass-container" class="form-elm">
+				<label for="pass">Password</label>
+				<input type="password" name="pass" id="pass" required>
+			</div>
+
+			<div id="sum-container" class="form-elm">
+				<label for="summary">Summary</label>
+				<textarea name="summary" id="summary" placeholder="Enter summary here">Please enter your summary here</textarea>
+			</div>
+
+			<div id="st-container" class="form-elm" >
+				<label for="dte">Date of birth</label>
+				<input type="date" name="dte" id="dte"><br>
+
+				<form action="/action_apge.php">
+					<label for="phone">Enter a mobile phone number:</label><br><br>
+					<input type="tel" id="phone" placeholder="123-456-7899" pattern="[0-9{3}-[0-9]{3}-[0-9}{4}" required><br><br>
+			</div>
+
+			
