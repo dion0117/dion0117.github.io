@@ -37,3 +37,10 @@ aside {
 	float: right;
 
 }
+
+footer {
+	width: 960px ;
+	height: 100px ;
+	background-color: #7cc576 ;
+
+}
