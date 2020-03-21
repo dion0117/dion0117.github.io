@@ -2,11 +2,17 @@
 
 html {
 	padding: 100px ;
+	
 }
 
-title {
-	float: top ; 
+body {
+	background-image: url("main-bg.png") ; 
+
 }
+.mainnav {
+
+}
+
 /*CSS clearfix*/
 
 .clearfix:after {
@@ -14,7 +20,12 @@ title {
 	display: table;
 	clear: both;
 }
-
+.box {
+	width: 300px ;
+	padding: 10px;
+	border: 1px solid block;
+	box-sizing: content-box;
+}
 /*header {
 	width: 860px ;
 	height: 1px ;
@@ -29,18 +40,65 @@ header {
 }
 
 
+.logo {
+	position: relative;
+	right: 800px;
+	bottom: 300px;
+}
+
+
+h1 {
+	text-align: center;
+
+
+}
+.mainnav {
+	text-align: center;
+}
 
 body {
 	background: repeat;
+
+}
+
+.cat1 {
+	 style="vertical-align: text-top;
+	  float: right;
+	  padding: 16px;" 
+	  margin: 15px ;
+}
+
+.home {
+	border: 
+	float: left;
+	background-color: #6dcff6 ;
+}
+p {
+	float: left;
+	width: 55% ;
 }
 aside {
 	float: right;
 
 }
-
+h3 {
+	clear: both;
+}
 footer {
 	width: 960px ;
 	height: 100px ;
 	background-color: #7cc576 ;
 
 }
+background-repeat: main-bg ; 
+}
+/*.copyright {
+	padding-top: 30px ;
+
+}*/
+
+.col-footer {
+	float: right ;
+	
+}
+
