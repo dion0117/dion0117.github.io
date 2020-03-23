@@ -66,6 +66,13 @@
 		bottom: 140px;
 
 	}
+	.sidebar {
+		width: 300px;
+		padding: 5px;
+		margin: 5px;
+		border: 1px;
+
+	}
 	/*.home.border-box{
 			/*in this case because of the presence of box-sizing, we only have to calculate the difference of left and right margins*/
 			width: calc(50% - 40px);
@@ -82,8 +89,7 @@
 		position: relative;
 		bottom: 40px;
 	}*/
-	.home {
-		clear: none;
+	/*.home {
 		width: 163px;
 		border: 2px;
 		padding: 15px;
@@ -91,11 +97,65 @@
 		background-color: #6dcff6;
 		position: relative;
 		left: 15px;
-		bottom: 40px;
+		bottom: 40px;*/
+/*
+	}
+
+	.main-nav {
+		width: 50px;
+		border: 2px;
+		padding: 15px;
+		margin: 10px;
+		background-color: #6dcff6;
+		box-sizing: border-box;
+		clear: both;
+	}*/
+	.first-p {
+		width: 640px;
+		height: 400px;
+		border: 2px;
+		padding: 15px;
+		margin: 10px;
+		box-sizing: border-box;
+		clear: both;
+		float: left;
 
 	}
-	
-		
+	.second-p {
+		width: 640px;
+		border: 2px;
+		padding: 15px;
+		margin: 10px;
+		box-sizing: border-box;
+		clear: both;
+		float: left;
+	}
+	.cat1 {
+	  float: right;
+	  float: top;
+	  clear: both;
+
+
+	}
+	h3 {
+		float: right;
+		margin: 60px;
+	}
+
+	.cat2 {
+		float: left;
+	}
+	/*
+	.main-nav {
+		width: 163px;
+		border: 2px;
+		padding: 15px;
+		margin: 10px;
+		background-color: #6dcff6;
+		box-sizing: border-box;
+		clear: both; */
+
+	}	
 	}
 
 /*html {
@@ -147,13 +207,6 @@ body[target]:after {
 	height: 200px ;
 	background-color: #7cc576 ;
 
-}
-
-
-.logo {
-	position: relative;
-	right: 800px;
-	bottom: 300px;
 }
 
 
@@ -210,12 +263,19 @@ h3 {
 	clear: both;
 
 }
+*/
 footer {
-	width: 960px ;
+	width: 860px ;
 	height: 100px ;
+	padding: 10px;
+	margin: 15px;
+	float: bottom;
+	border: 5px;
 	background-color: #7cc576 ;
 
+
 }
+/*
 background-repeat: main-bg ; 
 }
 /*.copyright {
