@@ -1,12 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS box modal</title>
+	<style type="text/css">
+		/*CSS reset*/
+		/* "*" is used to select all the elements on the page */
+		/* The following CSS block will reset the default padding and margin of all the elements to 0 */
+		* {
+			margin: 0;
+			padding: 0;
+		}
 
+		/*CSS clearfix*/
 
-html {
+		/* a 0, b = 1, c = 0 */
+		/* CSS spec = 010 */
+		.clearfix {
+			/*overflow is the property of a HTML element that handles the overflowing content*/
+			/*overflow can have values such as :scroll, hidden, auto */
+			overflow: auto;
+		}
+
+		/*:after is a pseudo element that can be accessed by the browser if certain CSS is given and it is activated for that specific element */
+		/* in this case we have activated the "after" pseudo element of elements that have class clearfix*/
+		.clearfix:after{
+			/* content css property is used to pass content through CSS*/
+			/*by giving content to a pseudo element, it gets activated and can be used for manipulating CSS display*/
+			content: "";
+			
+			/* Clear is used to clear siblings when a element is displayed on the web page*/
+			/*It means, it would ignore the float value of its floating siblings*/
+			/*clear: left, right or both */
+			clear: both;
+			/*display is used to change the display of an element, it will override the default display set by the browser*/
+			/*Popular values : inline, block, inline-block, table */
+			display: inline-block;
+
+		}
+	.container {
+		max-width: 960px;
+	}	
+	header {
+		width: 900px;
+		height: 200px ;
+		padding: 10px;
+		margin: 15px;
+		float: top;
+		border: 5px;
+		background-color: #7cc576 ;
+	}
+
+	.logo {
+		float:left;
+		margin: 15px;
+		bottom: 15px;
+	}
+
+	h1 {
+		width: 255px;
+		padding: 5px;
+		margin: 10px;
+		border: 1px;
+		position: relative;
+		left: 380px;
+		bottom: 140px;
+
+	}
+	/*.home.border-box{
+			/*in this case because of the presence of box-sizing, we only have to calculate the difference of left and right margins*/
+			width: calc(50% - 40px);
+			/* This tells the browser to calculate the width of the element by including the padding and the border-width */
+			/*box-sizing: border-box;
+			margin: 20px;
+			background-color: #6dcff6;*/
+	/*.main-nav {
+		width: 163px;
+		border:2px;
+		padding: 15px;
+		margin: 10px;
+		background-color: #6dcff6;
+		position: relative;
+		bottom: 40px;
+	}*/
+	.home {
+		clear: none;
+		width: 163px;
+		border: 2px;
+		padding: 15px;
+		margin: 10px;
+		background-color: #6dcff6;
+		position: relative;
+		left: 15px;
+		bottom: 40px;
+
+	}
+	
+		
+	}
+
+/*html {
 	padding: 100px ;
 	
 }
+html {
+  box-sizing: border-box;
+}
 
-body {
-	background-image: url("main-bg.png") ; 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+body[target]:after {
+	background-image: url("../img/main-bg.jpg"); 
 
 }
 .mainnav {
@@ -15,7 +121,7 @@ body {
 
 /*CSS clearfix*/
 
-.clearfix:after {
+/*.clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -32,7 +138,11 @@ body {
 	background-color: # 7cc576 ;
 
 }*/
-header {
+/*header {
+	position: absolute;
+	left: 10px;
+
+
 	width: 960px ;
 	height: 200px ;
 	background-color: #7cc576 ;
@@ -62,13 +172,28 @@ body {
 }
 
 .cat1 {
+	position: absolute;
+	/*position absolute positions the element absolutely relative to the parent*/
+	/*It means it ignores the positioning of its siblings*/
+	/*top: 210px;
+	right: 10px;
+	z-index: 1;
+	/* z-index is the placement of overlapping elements*/
+	/*higher the value, closer to the screen element is */
+	/*for z-index to work, an element must have a position declaration*/
+/*}
+
+/* what I had before- 
+.cat1 {
 	 style="vertical-align: text-top;
 	  float: right;
 	  padding: 16px;" 
 	  margin: 15px ;
-}
+	 
+}*/
+ 
 
-.home {
+/*.home {
 	border: 
 	float: left;
 	background-color: #6dcff6 ;
@@ -83,6 +208,7 @@ aside {
 }
 h3 {
 	clear: both;
+
 }
 footer {
 	width: 960px ;
@@ -97,7 +223,7 @@ background-repeat: main-bg ;
 
 }*/
 
-.col-footer {
+/*.col-footer {
 	float: right ;
 	
 }
