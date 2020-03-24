@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CSS box modal</title>
+@charset "utf-8"
 	<style type="text/css">
 		/*CSS reset*/
 		/* "*" is used to select all the elements on the page */
@@ -37,9 +34,10 @@
 			display: inline-block;
 
 		}
-	.container {
+	html {
 		max-width: 960px;
 	}	
+	
 	header {
 		width: 900px;
 		height: 200px ;
@@ -54,6 +52,8 @@
 		float:left;
 		margin: 15px;
 		bottom: 15px;
+	}
+
 	}
 
 	h1 {
@@ -131,6 +131,7 @@
 		float: left;
 	}
 	.cat1 {
+
 	  float: right;
 	  float: top;
 	  clear: both;
@@ -143,7 +144,41 @@
 	}
 
 	.cat2 {
+		width: 180px;
+		padding: 10px;
+		margin: 15px;
+		border: 2px;
 		float: left;
+		position: relative;
+		left: 15px;
+		bottom: -30px;
+		box-sizing: border-box;
+		clear: both;
+	}
+	.cat3 {
+		width: 180px;
+		padding: 10px;
+		margin: 15px;
+		border: 2px;
+		float: left;
+		position: relative;
+		left: 300px;
+		bottom: 300px;
+		box-sizing: border-box;
+		clear: both;
+	}
+
+	.cat4 {
+		width: 180px;
+		padding: 10px;
+		margin: 15px;
+		border: 2px;
+		float: right;
+		box-sizing: border-box;
+		right: 15px;
+		position: relative;
+		clear: both;
+
 	}
 	/*
 	.main-nav {
@@ -269,9 +304,9 @@ footer {
 	height: 100px ;
 	padding: 10px;
 	margin: 15px;
-	float: bottom;
 	border: 5px;
 	background-color: #7cc576 ;
+	float: bottom;
 
 
 }
