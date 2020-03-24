@@ -98,7 +98,7 @@
 		box-sizing: border-box;
 		clear: both;
 	}*/
-/*
+
 	.first-p {
 
 		
@@ -116,27 +116,7 @@
 		clear: both;
 		float: left;
 		display: table;
-
 	}
-	*/
-	.container {
-
-  display: table;
-
-}
-
-.row {
-
-  display: table-row;
-
-}
-
-#column1, #column2 {
-
-  display: table-cell;
-
-}
-
 	.cat1 {
 	  margin-right: 30px;
 	  margin-left: 15px;
