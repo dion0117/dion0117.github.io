@@ -38,12 +38,13 @@
 
 	}
 
-	#title {
+	h2 {
 		width: 255px;
 		padding: 5px;
 		margin: 10px;
 		border: 1px;
 		position: relative;
+		left: 860px;
 		clear: both;
 		float: right;
 		
@@ -84,7 +85,7 @@
 		background-color: #6dcff6;
 		position: relative;
 		left: 15px;
-		bottom: 40px;*/
+		bottom: 40px; 
 /*
 	}
 
@@ -103,6 +104,7 @@
 		margin-right: 15px;
 
 		box-sizing: border-box;
+		display: inline-block;
 		clear: both;
 		float: left;
 
