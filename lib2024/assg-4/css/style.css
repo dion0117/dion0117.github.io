@@ -1,328 +1,47 @@
 @charset "utf-8"
-	
-		* {
-			margin: 0;
-			padding: 0;
-		}
+	body {
+        background-color: ;	
+        margin: 0px;
+    }
+    .clearfix:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
 
-		
-		.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+	.main { 
+        max-width: 960px;
+        background-image: url("../img/main-bg.png");
+    }
+    #header {
+    	background-color: #7cc576;	
+    	width: 100%;
+    	margin: 2%;
 
-	background-image: url("../img/main-bg.png");
-}
-		}
-	html {
-		max-width: 960px;
-	}	
-	
-	#header {
-		width: 900px;
-		height: 200px ;
-		padding: 10px;
-		margin-left: 15px;
-		margin-right: 15px;
-		float: top;
-		border: 5px;
-		background-color: #7cc576 ;
-	}
-
-	.logo {
-		float:left;
-		margin: 15px;
-		bottom: 15px;
-	}
-
-	}
-
-	h2 {
-		width: 255px;
-		padding: 5px;
-		margin: 10px;
-		border: 1px;
-		position: relative;
-		left: 860px;
-		clear: both;
-		float: right;
-		
-		bottom: 140px;
-
-	}
-		}
-	aside {
-		width: 200px;
-		padding-left: 850px;
-		float: right;
-		clear: both;
-		display: inline-block;
-		
-
-	}
-	/*.home.border-box{
-			/*in this case because of the presence of box-sizing, we only have to calculate the difference of left and right margins*/
-			width: calc(50% - 40px);
-			/* This tells the browser to calculate the width of the element by including the padding and the border-width */
-			/*box-sizing: border-box;
-			margin: 20px;
-			background-color: #6dcff6;*/
-	/*.main-nav {
-		width: 163px;
-		border:2px;
-		padding: 15px;
-		margin: 10px;
-		background-color: #6dcff6;
-		position: relative;
-		bottom: 40px;
-	}*/
-	/*.home {
-		width: 163px;
-		border: 2px;
-		padding: 15px;
-		margin: 10px;
-		background-color: #6dcff6;
-		position: relative;
-		left: 15px;
-		bottom: 40px; 
-/*
-	}
-
-	.main-nav {
-		width: 50px;
-		border: 2px;
-		padding: 15px;
-		margin: 10px;
-		background-color: #6dcff6;
-		box-sizing: border-box;
-		clear: both;
-	}*/
-
-	.first-p {
-
-		
-		margin-right: 15px;
-
-		box-sizing: border-box;
-		display: inline-block;
-		clear: both;
-		float: left;
-
-	}
-	.second-p {
-		width: 630px;
-		box-sizing: border-box;
-		clear: both;
-		float: left;
-		display: table;
-	}
-	.cat1 {
-	  margin-right: 30px;
-	  margin-left: 15px;
-	  float: right;
-	  float: top;
-	  clear: both;
-
-/*
-	}
-	h2 {
-		width: 200px;
-		float: right;
-		position:relative;
-		left: 1000px;
-		bottom: 1800px;*/
-
-		
-	
-	}
-	h3 {
-		float: right;
-		margin: 60px;
-	}
-
-	.cat2 {
-		width: 180px;
-		padding: 10px;
-		margin: 15px;
-		border: 2px;
-		float: left;
-		position: relative;
-		
-		bottom: 166px;
-		box-sizing: border-box;
-		clear: both;
-	}
-	.cat3 {
-		width: 180px;
-		padding: 10px;
-		margin: 15px;
-		border: 2px;
-		float: left;
-		position: relative;
-		left: 188px;
-		bottom: 430px;
-		box-sizing: border-box;
-		clear: both;
-	}
-
-	.cat4 {
-		width: 180px;
-		padding: 10px;
-		margin: 15px;
-		border: 2px;
-		float: right;
-		box-sizing: border-box;
-		position: relative;
-		left: 600px;
-		clear: both;
-
-	}
-	ul {
-  list-style-type: none;
- }
-	/*
-	.main-nav {
-		width: 163px;
-		border: 2px;
-		padding: 15px;
-		margin: 10px;
-		background-color: #6dcff6;
-		box-sizing: border-box;
-		clear: both; */
-
-	}	
-	}
-
-/*html {
-	padding: 100px ;
-	
-}
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-
-body[target]:after {
-	background-image: url("../img/main-bg.jpg"); 
-
-}
-.mainnav {
-
-}
-
-/*CSS clearfix*/
-
-/*.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.box {
-	width: 300px ;
-	padding: 10px;
-	border: 1px solid block;
-	box-sizing: content-box;
-}
-/*header {
-	width: 860px ;
-	height: 1px ;
-	background-color: # 7cc576 ;
-
-}*/
-/*header {
-	position: absolute;
-	left: 10px;
-
-
-	width: 960px ;
-	height: 200px ;
-	background-color: #7cc576 ;
-
-}
-
-
-h1 {
-	text-align: center;
-
-
-}
-.mainnav {
-	text-align: center;
-}
-
-body {
-	background: repeat;
-
-}
-
-.cat1 {
-	position: absolute;
-	/*position absolute positions the element absolutely relative to the parent*/
-	/*It means it ignores the positioning of its siblings*/
-	/*top: 210px;
-	right: 10px;
-	z-index: 1;
-	/* z-index is the placement of overlapping elements*/
-	/*higher the value, closer to the screen element is */
-	/*for z-index to work, an element must have a position declaration*/
-/*}
-
-/* what I had before- 
-.cat1 {
-	 style="vertical-align: text-top;
-	  float: right;
-	  padding: 16px;" 
-	  margin: 15px ;
-	 
-}*/
- 
-
-/*.home {
-	border: 
-	float: left;
-	background-color: #6dcff6 ;
-}
-p {
-	float: left;
-	width: 55% ;
-}
-aside {
-	float: right;
-
-}
-h3 {
-	clear: both;
-
-}
-*/
-#footer-links {
-	width: 860px ;
-	height: 100px ;
-	padding: 10px;
-	margin: 15px;
-	border: 5px;
-	background-color: #7cc576 ;
-	position: relative;
-	bottom: 10px;
-	float: bottom;
-
-
-}
-/*
-background-repeat: main-bg ; 
-}
-/*.copyright {
-	padding-top: 30px ;
-
-}*/
-
-/*.col-footer {
-	float: right ;
-	
-}
-
+    }
+    .logo {
+    	float: left;
+    	box-sizing: border-box;
+    }
+    #title {
+    	float-right
+    	display: inline-block;
+    	padding-left: 33%
+    
+    }
+    aside {
+    	float: right;
+    	box-sizing: border-box;
+    	width: 34% ;
+    }
+    .first-p{
+    	box-sizing: border-box;
+    	float-left;
+    	width: 60%; 
+    }
+    .second-p {
+    	box-sizing: border-box;
+    	float-left;
+    	width: 60%;
+    }
+    
