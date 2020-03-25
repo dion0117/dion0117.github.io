@@ -10,38 +10,119 @@
     }
 
 	.main { 
-        max-width: 960px;
+        height: 1000px;
         background-image: url("../img/main-bg.png");
     }
     #header {
     	background-color: #7cc576;	
     	width: 100%;
+        height: 228px;
     	margin: 2%;
 
     }
     .logo {
-    	float: left;
+    
+        float: top;
     	box-sizing: border-box;
+        position: relative;
+        top: 25px;
+    }
+    .home {
+        padding: 25px;
+        display: inline-block;
+        background-color: #6dcff6;
+        list-style-type: none;
+        text-align: center;
+        font-size: 16pt;
+        position: relative;
+        left: 13%;
+        bottom: 80px;
+        border-radius: 5%;
+
+    }
+    .about {
+        padding: 25px;
+        display: inline-block;
+        background-color: #6dcff6;
+        list-style-type:none;
+        text-align: center;
+        font-size: 16pt;
+        position: relative;
+        left: 25%;
+        bottom: 80px;
+        border-radius: 5%;
+    }
+    .contact {
+        padding: 25px;
+        display: inline-block;
+        background-color: #6dcff6;
+        list-style-type: none;
+        text-align: center;
+        font-size: 16pt;
+        float: right;
+        position: relative;
+        right: 32%;
+        bottom: 80px;
+        border-radius: 5%;
+    }
+    .work {
+        padding: 25px;
+        display: inline-block;
+        background-color: #6dcff6;
+        list-style-type: none;
+        text-align: center;
+        font-size: 16pt;
+        float: right;
+        position: relative;
+        right: 0px;
+        bottom: 80px;
+        border-radius: 5%;
     }
     #title {
     	float-right
     	display: inline-block;
     	padding-left: 33%
-    
+
+
     }
     aside {
+    	position: relative;
+        width: 286px;
+    	bottom: 320px;
+        left: 350px;
     	float: right;
     	box-sizing: border-box;
-    	width: 34% ;
+    
     }
     .first-p{
     	box-sizing: border-box;
     	float-left;
     	width: 60%; 
+    	font-size: 12pt;
+    	font-weight: normal;
     }
     .second-p {
     	box-sizing: border-box;
     	float-left;
     	width: 60%;
     }
+    
+    .footer-container {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #7cc576;
+        height: 114px;
+    }
+    .copy {
+        padding-top: 10px;
+    }
+    .footer-links {
+        float: right;
+
+    }
+   
+        
+      
+    
+    
     
