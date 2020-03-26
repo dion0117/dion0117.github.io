@@ -37,7 +37,7 @@
         left: 13%;
         bottom: 80px;
         border-radius: 5%;
-        text-decoration: none;
+
 
     }
     .about {
@@ -78,21 +78,28 @@
         bottom: 80px;
         border-radius: 5%;
     }
-    #title {
+    #name {
     	float-right
     	display: inline-block;
     	padding-left: 33%
 
 
     }
-    aside {
-    	position: relative;
+    .cat1 {
+    float: right;
+    margin-right: 15px;
+    position: relative;
+    bottom: 320px;
+    box-sizing: border-box;
+    }
+    #t2 {
+    width: 286px;
+
+
+    }
+    #side {
         width: 286px;
-    	bottom: 320px;
-        left: 350px;
-    	float: right;
-    	box-sizing: border-box;
-    
+        margin-right: 15px;
     }
     .first-p{
     	box-sizing: border-box;
@@ -106,7 +113,14 @@
     	float-left;
     	width: 60%;
     }
-    
+    .secondarycontent {
+        box-sizing: border-box;
+        margin-top: -280px;
+    }
+    .cat3 {
+        box-sizing: border-box;
+        left: -560px;
+    }
     .footer-container {
         box-sizing: border-box;
         width: 100%;
