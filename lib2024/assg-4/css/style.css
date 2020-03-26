@@ -18,7 +18,6 @@
     	width: 100%;
         height: 228px;
     	margin: 2%;
-
     }
     .logo {
     
@@ -38,6 +37,7 @@
         left: 13%;
         bottom: 80px;
         border-radius: 5%;
+        text-decoration: none;
 
     }
     .about {
