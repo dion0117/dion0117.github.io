@@ -95,6 +95,7 @@
 							<td>Internet App</td>
 						</tr>
 				</table>
+				<h2>Edit Profile</h2>
 				<div id="wrapper" class="wrapper">
 				<section id="html-forms" class="main-section">
 				<form action="somepage.php" method="get">
@@ -116,6 +117,13 @@
 				</div>
 
 				<div id="province-drop-container" class="form-elm">
+				<!--	<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form><-->
 					<label for="province">Province</label>
 					<select name="province" id="province">
 						<option value="alberta">Alberta</option>
@@ -129,7 +137,67 @@
 						<option value="prince-edward-island" selected>Prince Edward Island</option>
 						<option value="quebec" selected>Quebec</option>
 						<option value="saskatchewan" selected>Saskatchewan</option>
-						
 					</select>
-					</select>
+					<div id="postal-container" class="form-elm">
+				<label for="postal">Postal Code</label>
+				<input type="postal" name="postal" id="postal" required>
 				</div>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</div>
+			</form>
+			<div>
+				<h2>Profile Info</h2>
+			</div>
+		</section>
+	</div>
+</main>
+	<footer class="footer" id="footer">
+		<div class="footer-container">
+			<section class="col-footer company-info">
+		<!--<script type="text/javascript" src="scripts/script.js"></script>-->
+		<section class="col-footer links">	<h4>QUICK LINKS</h4>
+				<nav>
+					<ul>
+						<li>
+							<a href="schedule.html">Schedule</a>
+						</li>
+						<li>
+							<a href="About.html">About</a>
+						</li>
+						<li>
+							<a href="Portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a href="Contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+		<section class="footer-links">
+			<h4>FOLLOW US</h4>
+					<nav>
+						<a href="http://www.facebook.com"><img src="img/facebook.png" alt="Facebook"/></a>
+						<a href="http://www.youtube.com"><img src="img/youtube.png" alt="Youtube"/></a>
+						<a href="http://www.twitter.com"><img src="img/twitter.png" alt="Twitter"/></a>
+					</nav>
+				</section>
+				<section>
+					<h4>ADDRESS</h4>
+					<address>
+						&#49;&#51;&#56;&#53;Woodroffe Ave&#46;<br>
+						Nepean ON K&#50;G &#49;V&#56;<br>
+						Canada
+					</address>
+
+	<!-- script tag is an embeded way of adding javascript to your document -->
+	<!-- Script tag must be added at the bodttom of your HTML file before the closing of <body> tag -->
+	<!-- This will make sure that all the elements are properly loaded and ready for javascript to interact with them -->
+
+<!--	<script type="text/javascript">
+		document.querySelector('.logo').style.backgroundColor="red";-->
+	</footer>
+	</script>
+</body>
+</html>
