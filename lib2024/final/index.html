@@ -99,10 +99,37 @@
 				<section id="html-forms" class="main-section">
 				<form action="somepage.php" method="get">
 				<div id="fn-container" class="form-elm">
-				<label for="Name">Name:</label>
-				<input type="text" name="Name" id="FirstName">
+				<label for="Name">Name</label>
+				<input type="text" name="Name" id="FirstName" required>
 				</div>					
 				<div id="email-container" class="form-elm">
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required>
+				</div>
+				<div id="address-container" class="form-elm">
+				<label for="address">Address</label>
+				<input type="address" name="address" id="address" required>
+				</div>
+				<div id="city-container" class="form-elm">
+				<label for="city">City</label>
+				<input type="city" name="city" id="city" required>
+				</div>
+
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province</label>
+					<select name="province" id="province">
+						<option value="alberta">Alberta</option>
+						<option value="british-columbia">British Columbia</option>
+						<option value="manitoba" selected>Manitoba</option>
+						<option value="new-brunswick">New Brunswick</option>
+						<option value="newfoundland">Newfoundland</option>
+						<option value="labrador" selected>Labrador</option>
+						<option value="nova-scotia">Nova Scotia</option>
+						<option value="ontario">Ontario</option>
+						<option value="prince-edward-island" selected>Prince Edward Island</option>
+						<option value="quebec" selected>Quebec</option>
+						<option value="saskatchewan" selected>Saskatchewan</option>
+						
+					</select>
+					</select>
 				</div>
