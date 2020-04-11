@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>My website</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/json_table.css">
 </head>
 <body>
 	<div id="container" class="container">
@@ -48,7 +49,8 @@
 				</p>
 			</section>
 			<!-- main content end -->
-			<section class="table">
+			<div id="json_table">
+	<!--		<section class="table">-->
 					<h2>SCHEDULE</h2>
 				<table>
 					<thead>
@@ -100,30 +102,31 @@
 				<section id="html-forms" class="main-section">
 				<form action="somepage.php" method="get">
 				<div id="fn-container" class="form-elm">
-				<label for="Name">Name</label>
-				<input type="text" name="Name" id="FirstName" required>
-				</div>					
-				<div id="email-container" class="form-elm">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" required>
-				</div>
-				<div id="address-container" class="form-elm">
-				<label for="address">Address</label>
-				<input type="address" name="address" id="address" required>
-				</div>
-				<div id="city-container" class="form-elm">
-				<label for="city">City</label>
-				<input type="city" name="city" id="city" required>
-				</div>
+			
+			<div>
+				<br>
+			<section class="form-value-transfer clearfix">
+				<form id="form" action="submit.php" method="post">
+					<p>
+						<label>Name</label>
+						<input type="text" required name="name" id="name">
+					</p>
 
-				<div id="province-drop-container" class="form-elm">
-				<!--	<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form><-->
+					<p>
+						<label>Email</label>
+						<input type="email" required name="email" id="email">
+					</p>
+					
+					<p>
+						<label>Address</label>
+						<input type="address" required name="address" id="address">
+					</p>
+
+					<p>
+						<label>City</label>
+						<input type="address" required name="address" id="address">
+					</p>
+					<div id="province-drop-container" class="form-elm">
 					<label for="province">Province</label>
 					<select name="province" id="province">
 						<option value="alberta">Alberta</option>
@@ -138,16 +141,30 @@
 						<option value="quebec" selected>Quebec</option>
 						<option value="saskatchewan" selected>Saskatchewan</option>
 					</select>
-					<div id="postal-container" class="form-elm">
-				<label for="postal">Postal Code</label>
-				<input type="postal" name="postal" id="postal" required>
-				</div>
-				<button type="submit">Submit</button>
-				<button type="reset">Reset</button>
-			</div>
-			</form>
-			<div>
-				<h2>Profile Info</h2>
+
+					<p>
+						<label>Postal Code</label>
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					</p>
+
+					<button type="submit">Submit</button>
+				</form>
+
+				<div id="results">
+					<h2>Profile Info</h2>
+					<p >Name: <span id="name_result"></span></p>
+					<p >Email: <a href="#" id="email_result"></a></p>
+					<p >Address: <span id="address_result"></span></p>
+					<p >City: <span id="city_results"></span></p>
+					<p >Province: <span id="province_result"></span></p>
+					<p >Postal Code: <span id="pc_result"></span></p> 
+
+	<!-- include jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
+	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
+	<script type="text/javascript" src="scripts/form_validation.js"></script>
+
 			</div>
 		</section>
 	</div>
@@ -191,12 +208,10 @@
 						Canada
 					</address>
 
-	<!-- script tag is an embeded way of adding javascript to your document -->
-	<!-- Script tag must be added at the bodttom of your HTML file before the closing of <body> tag -->
-	<!-- This will make sure that all the elements are properly loaded and ready for javascript to interact with them -->
 
-<!--	<script type="text/javascript">
-		document.querySelector('.logo').style.backgroundColor="red";-->
+
+	<script type="text/javascript">
+		document.querySelector('.logo').style.backgroundColor="";
 	</footer>
 	</script>
 </body>

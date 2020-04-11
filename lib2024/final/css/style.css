@@ -86,7 +86,7 @@ h2 {
 
 	/*the following css is used to restrict the content beyond 1280px*/
 	/*This is to make sure the main content is in the readbable area for large screen sizes*/
-/*	header, main, footer {
+	header, main, footer {
 
 		max-width: 1280px;
 		margin: 0 auto;
@@ -144,24 +144,24 @@ h2 {
 		float: left;
 		width: 30%;
 		box-sizing: border-box;
-	}*/
-/*	.col-footer {
+	}
+	.col-footer {
 		width: 31%;
 		/*total width = 31% + 1%(left margin) + 1% (right margin) */
-	/*	box-sizing: border-box;
+		box-sizing: border-box;
 		/*border box adjusts the width according to the padding only and does not consider margins*/
 		/*Therefore the space used by margins should be manually adjusted in the width declaration*/
-	/*	margin: 0 1%;
+		margin: 0 1%;
 		padding: 10px;
 		float: left;
 	}
-}*/
+}
 
 /*Desktop First Media Query*/
 /* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
 /*These media queries will target the screen sizes for smaller devices*/
 /*The following media query targets the screen sizes that are less than 768px*/
-/*@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	footer {
 		background: #FFEB3B;
 	}
