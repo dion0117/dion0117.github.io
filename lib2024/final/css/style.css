@@ -58,7 +58,13 @@ table {
 main {
 	background-image: url("../img/main-bg.png");
 }
+h1 {
+    font-family: 'Aclonica';font-size: 22px;
 
+}
+.container {
+	background: #72a9ae;
+}
 /*
 	Color Pallete
 
@@ -85,18 +91,16 @@ header {
 
 }
 
-.logo {
+/*.logo {
 	float: left;
 	width:120px;
 	padding: 15px;
 	box-sizing: border-box;
 	background: #1976D2;
-	/*box-sizing border box makes the width adjust according to padding*/
+	/*box-sizing border box makes the width adjust according to padding
 }
+*/
 
-.container {
-	background: #72a9ae;
-}
 
 .page-title {
 	float: left;
