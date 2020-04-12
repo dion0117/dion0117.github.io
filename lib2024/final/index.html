@@ -10,9 +10,9 @@
 	<div id="container" class="container">
 		<!-- header start -->
 		<header class="site-header clearfix" id="site-header">
-			<div class="logo"><h1>MY LOGO</h1></div>
+			<h1>MY LOGO</h1>
 
-
+			
 			<nav>
 				<ul>
 					<li>
@@ -26,22 +26,22 @@
 					</li>
 					<li>
 						<a href="portfolio.html">PORTFOLIO</a>
+					</li>
 					<li>
 						<a href="contact.html">CONTACT</a>
 					</li>
 				</ul>
 			</nav>
-			</div>
 		</header>
+	</div>
 		<!-- header end -->
 		<!-- main start -->
 	<main class="main clearfix" id="main">
 		<!-- site content start -->
-		<article class="col-main site-content">
 			<!-- main content start -->
 			<section class="main-content">
-				<h2>ABOUT</h2>
-				<p>
+				<h2 id="mtitle">ABOUT</h2>
+				<p class="first-p">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dignissim augue. Duis ac nulla accumsan, venenatis sem vel, rutrum justo. Nunc posuere auctor dolor vitae convallis. Mauris scelerisque tortor quis est accumsan dictum. Sed sit amet sapien vehicula, molestie ipsum in, aliquam tortor. Quisque sed mi sed ipsum viverra dapibus non vel lorem. Nam in sapien eleifend, feugiat lectus ut, sagittis odio. Ut a hendrerit odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam erat nisi, placerat blandit imperdiet quis, ornare quis leo. Sed vestibulum erat a lorem sagittis, ac interdum turpis volutpat. Maecenas nec sem euismod ligula imperdiet porta id sed lacus. Sed vitae lacus volutpat, viverra odio et, pellentesque mi. Nam at posuere risus. Suspendisse vel libero sed velit molestie gravida.
 				</p>
 				<p>
@@ -49,7 +49,7 @@
 				</p>
 			</section>
 			<!-- main content end -->
-			<div id="json_table">
+			<section class="table">
 	<!--		<section class="table">-->
 					<h2>SCHEDULE</h2>
 				<table>
@@ -96,20 +96,19 @@
 							<td>Subject Analysis</td>
 							<td>Internet App</td>
 						</tr>
+					</tbody>
 				</table>
+		</section>
+				
 				<h2>Edit Profile</h2>
-				<div id="wrapper" class="wrapper">
-				<section id="html-forms" class="main-section">
-				<form action="somepage.php" method="get">
 				<div id="fn-container" class="form-elm">
-			
-			<div>
 				<br>
 			<section class="form-value-transfer clearfix">
+				<h2>Edit Profile</h2>
 				<form id="form" action="submit.php" method="post">
 					<p>
 						<label>Name</label>
-						<input type="text" required name="name" id="name">
+						<input type="text" name="name" id="name">
 					</p>
 
 					<p>
@@ -119,29 +118,31 @@
 					
 					<p>
 						<label>Address</label>
-						<input type="address" required name="address" id="address">
+						<input type="text" name="address" id="address">
 					</p>
 
 					<p>
 						<label>City</label>
-						<input type="address" required name="address" id="address">
+						<input type="text" name="city" id="city">
 					</p>
-					<div id="province-drop-container" class="form-elm">
-					<label for="province">Province</label>
-					<select name="province" id="province">
-						<option value="alberta">Alberta</option>
-						<option value="british-columbia">British Columbia</option>
-						<option value="manitoba" selected>Manitoba</option>
-						<option value="new-brunswick">New Brunswick</option>
-						<option value="newfoundland">Newfoundland</option>
-						<option value="labrador" selected>Labrador</option>
-						<option value="nova-scotia">Nova Scotia</option>
-						<option value="ontario">Ontario</option>
-						<option value="prince-edward-island" selected>Prince Edward Island</option>
-						<option value="quebec" selected>Quebec</option>
-						<option value="saskatchewan" selected>Saskatchewan</option>
-					</select>
-
+					<div id="province_container" class="form-elm">
+						<label for="province">Province</label>
+						<select name="province" id="province" multiple>
+							<optgroup label="province">
+								<option value="alberta">Alberta</option>
+								<option value="british_columbia">British Columbia</option>
+								<option value="manitoba" selected>Manitoba</option>
+								<option value="new_brunswick">New Brunswick</option>
+								<option value="newfoundland">Newfoundland</option>
+								<option value="labrador" selected>Labrador</option>
+								<option value="nova_scotia">Nova Scotia</option>
+								<option value="ontario">Ontario</option>
+								<option value="prince_edward_island" selected>Prince Edward Island</option>
+								<option value="quebec" selected>Quebec</option>
+								<option value="saskatchewan" selected>Saskatchewan</option>
+							</optgroup>
+						</select>
+					</div>
 					<p>
 						<label>Postal Code</label>
 						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
@@ -149,7 +150,8 @@
 
 					<button type="submit">Submit</button>
 				</form>
-
+			</section>
+		
 				<div id="results">
 					<h2>Profile Info</h2>
 					<p >Name: <span id="name_result"></span></p>
@@ -158,22 +160,19 @@
 					<p >City: <span id="city_results"></span></p>
 					<p >Province: <span id="province_result"></span></p>
 					<p >Postal Code: <span id="pc_result"></span></p> 
-
+				</div>
 	<!-- include jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
 	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
-	<script type="text/javascript" src="scripts/form_validation.js"></script>
-
-			</div>
-		</section>
+	<script src="scripts/script.js"></script>
 	</div>
 </main>
 	<footer class="footer" id="footer">
 		<div class="footer-container">
-			<section class="col-footer company-info">
 		<!--<script type="text/javascript" src="scripts/script.js"></script>-->
-		<section class="col-footer links">	<h4>QUICK LINKS</h4>
+		<section class="col-footer links">	
+			<h4>QUICK LINKS</h4>
 				<nav>
 					<ul>
 						<li>
@@ -207,12 +206,12 @@
 						Nepean ON K&#50;G &#49;V&#56;<br>
 						Canada
 					</address>
+				</section>
 
 
-
-	<script type="text/javascript">
+	<script>
 		document.querySelector('.logo').style.backgroundColor="";
-	</footer>
 	</script>
+</footer>
 </body>
 </html>
