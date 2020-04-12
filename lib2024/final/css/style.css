@@ -24,6 +24,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -47,31 +48,275 @@ table {
 	border-spacing: 0;
 }
 
+/*CSS clearfix*/
 
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-/*.col-main, .col-footer, img {
+
+
+/*
+	Color Pallete
+
+	Primary Blue : #1976D2;
+	Light blue : #BBDEFB;
+	Primary Text : #212121;
+	Gray : #757575;
+	Orange : #FF5722;
+	Red : #F44336;
+	Yellow : #FFEB3B;
+*/
+
+/************************
+		MOBILE FIRST
+************************/
+
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
+.col-main, .col-footer, img {
 	width:100%;
 }
- 
+
+/* Header styles */ 
 header {
+
+}
+
+.logo {
+	float: left;
+	width:120px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #1976D2;
+	/*box-sizing border box makes the width adjust according to padding*/
+}
+
+.container {
 	background: #72a9ae;
-
-}
-/*table {
-  border-collapse: collapse;
 }
 
-table, th, td {
-  border: 1px solid black;
+.page-title {
+	float: left;
+	width: calc(100%);
+	box-sizing: border-box;
+	padding: 20px;
 }
 
-h2 { 
-		font-color: 77;
-		 }
+.desktop-nav {
+	clear: both;
+	display: none;
+}
+
+.desktop-nav ul {
+	width:100%;
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 25%;
+	padding: 10px;
+	float: left;
+	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
+	position: relative;
+}
+
+/*Target the first child and add border-top-left, border-bottom-left radius*/
+.desktop-nav li:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+/*target the last child and add border-top-right and border-top-left radius*/
+.desktop-nav li:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+.main-nav a {
+	display: block;
+	box-sizing: border-box;
+	padding: 10px;
+	border-left: 2px solid #444;
+	background: #F44336;
+}
+
+/* Target the first child and remove border-left from the a tag contained in that li*/
+.desktop-nav li:first-child a {
+	border-left: 0;
+} 
+
+.desktop-nav li .sub-nav li {
+	width: 100%;
+}
+
+.desktop-nav li .sub-nav li a {
+
+	background: #BBDEFB;
+	border-left: none;
+	border-bottom: 2px solid #444;
+}
+
+.sub-nav {
+	position: absolute;
+	width: 100%;
+	display: none;
+	/*box shadow is used to add shadow to the HTML elements, giving them a 3d effect*/
+	/*box shadow : left-offset top-offset blur color*/
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+/*This piece of CSS is used to make sub-nav show when the main li is hovered */
+/* > is called the direct child selector*/
+.desktop-nav > ul > li:hover .sub-nav {
+	display: block;
+}
+
+.ham {
+	float: right;
+	/*background: #BBDEFB;*/
+}
+
+.ham {
+		
+		height: 15px;
+		margin:15px;
+		padding-top: 5px;
+		position: relative;
+		float: right;
+		/*this is used to create a pointer for element*/
+		cursor: pointer;
+	}
+
+	.ham, .ham:before, .ham:after {
+		width: 30px;
+		border-top: 5px solid black;
+	}
+
+	.ham:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black;
+	}
+
+	.ham:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		bottom: 0;
+	}
+
+.mobile-nav {
+	width:100%;
+	clear: both;
+	position: absolute;
+	display: none;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+	
+}
+
+.mobile-nav li {
+	box-sizing: border-box;
+	width:100%;
+	padding: 10px;
+	background: lightgreen;
+	border-bottom: 2px solid #121212;
+
+}
+
+
+/******Image Gallery ****/
+
+.image-gallery-overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	z-index: 100;
+	display: none;
+}
+
+.image-gallery .img-slide-thumb img {
+	opacity: 0.5;
+	transition: all ease 0.3s;
+}
+
+/*making the image slide thumb active class and giving it opacity:1; */
+.image-gallery .img-slide-thumb.img-slide-thumb-active img, 
+.image-gallery .img-slide-thumb:hover img{
+	opacity: 1;
+	/*box-shadow: vertical-offset horizontal offset blur color*/
+	box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+/*hiding all the image slides*/
+.img-slide {
+	display: none;
+	position: absolute;
+	width: 90%;
+	max-height: 90%;
+	overflow: hidden;
+	left:5%;
+	top: 5%;
+	border: 1px solid #f1f1f1;
+}
+
+/*showing the active image slide*/
+.img-slide.active {
+	display: block;
+}
+
+
+/*main content styles*/
+
+.site-content {
+
+	background: #BBDEFB;
+	padding: 15px;
+	width:100%;
+	box-sizing: border-box;
+}
+
+.site-sidebar {
+	background: #1976D2;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.js-color {
+	width: 30%;
+	margin: 1%;
+	height: 150px;
+	background: blue;
+	float: left;
+}
+
+/*footer styles*/
+footer {
+	background: #F44336;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.company-info {
+	background: #1976D2;
+}
+
+.links {
+	background: #FFEB3B;
+}
+
+.social-media {
+	background: #757575;
+}
+
 /*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	header {
@@ -145,6 +390,17 @@ h2 {
 		width: 30%;
 		box-sizing: border-box;
 	}
+
+	/*reducing opacity for the img-slide-thumb inactive elements*/
+	.image-gallery .img-slide-thumb {
+		width: 33%;
+		padding: 10px;
+		box-sizing: border-box;
+		float: left;
+		box-shadow: none;
+	}
+
+
 	.col-footer {
 		width: 31%;
 		/*total width = 31% + 1%(left margin) + 1% (right margin) */
