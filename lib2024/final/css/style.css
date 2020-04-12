@@ -55,16 +55,38 @@ table {
 	display: table;
 	clear: both;
 }
+/* #1 Regular Weight 
+@font-face {
+	font-family: "FamilyName";
+	font-style: normal;
+	font-weight: normal;
+	src: url("[url to the regular version]");
+}*/
+
 main {
 	background-image: url("../img/main-bg.png");
 }
-h1 {
+h1  {
     font-family: 'Aclonica';font-size: 22px;
-
+    color: #72a9ae;
 }
+thead {
+	 color: #72a9ae;
+}
+h2 {
+	color: #72a9ae;
+}
+
+/*
+h-nav, h-navtwo, main, footer
+	@font-face {
+  font-family: ;
+  src: url(css/fonts);
+
+ }*//*
 .container {
 	background: #72a9ae;
-}
+}*/
 /*
 	Color Pallete
 
@@ -102,12 +124,12 @@ header {
 */
 
 
-.page-title {
+/*.page-title {
 	float: left;
 	width: calc(100%);
 	box-sizing: border-box;
 	padding: 20px;
-}
+}*/
 
 .desktop-nav {
 	clear: both;
@@ -137,12 +159,12 @@ header {
 	border-radius: 0 10px 10px 0;
 }
 
-.main-nav a {
+#h-nav  {
 	display: block;
-	box-sizing: border-box;
+	/*box-sizing: border-box;
 	padding: 10px;
-	border-left: 2px solid #444;
-	background: #F44336;
+	border-left: 2px solid #444;*/
+	background: #72a9ae;
 }
 
 /* Target the first child and remove border-left from the a tag contained in that li*/
@@ -154,17 +176,17 @@ header {
 	width: 100%;
 }
 
-.desktop-nav li .sub-nav li a {
+/*.desktop-nav li .sub-nav li a {
 
 	background: #BBDEFB;
 	border-left: none;
 	border-bottom: 2px solid #444;
-}
+}*/
 
-.sub-nav {
+#results {
 	position: absolute;
-	width: 100%;
-	display: none;
+	width: 30%;
+	/*display: none;*/
 	/*box shadow is used to add shadow to the HTML elements, giving them a 3d effect*/
 	/*box shadow : left-offset top-offset blur color*/
 	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
@@ -237,7 +259,7 @@ header {
 
 /******Image Gallery ****/
 
-.image-gallery-overlay{
+/*.image-gallery-overlay{
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -251,16 +273,16 @@ header {
 	transition: all ease 0.3s;
 }
 
-/*making the image slide thumb active class and giving it opacity:1; */
+/*making the image slide thumb active class and giving it opacity:1; 
 .image-gallery .img-slide-thumb.img-slide-thumb-active img, 
 .image-gallery .img-slide-thumb:hover img{
 	opacity: 1;
-	/*box-shadow: vertical-offset horizontal offset blur color*/
+	/*box-shadow: vertical-offset horizontal offset blur color
 	box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
 	cursor: pointer;
 }
 
-/*hiding all the image slides*/
+/*hiding all the image slides
 .img-slide {
 	display: none;
 	position: absolute;
@@ -272,13 +294,13 @@ header {
 	border: 1px solid #f1f1f1;
 }
 
-/*showing the active image slide*/
+/*showing the active image slide
 .img-slide.active {
 	display: block;
 }
 
 
-/*main content styles*/
+/*main content styles
 
 .site-content {
 
@@ -286,12 +308,11 @@ header {
 	padding: 15px;
 	width:100%;
 	box-sizing: border-box;
-}
-
-.site-sidebar {
-	background: #1976D2;
+}*/
+aside {
+	float: right;
 	padding: 15px;
-	width: 100%;
+	width: 30%;
 	box-sizing: border-box;
 }
 
@@ -325,8 +346,7 @@ footer {
 
 /*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-	header {
-		background: #FFEB3B;
+	/*header {
 	}
 }
 
@@ -367,20 +387,20 @@ footer {
 
 	.ham, .ham:before, .ham:after {
 		width: 30px;
-		border-top: 5px solid black;
+		border-top: 5px red;
 	}
 
 	.ham:before {
 		content: "";
 		display:block;
 		position: absolute;
-		background: black;
+		background: black ;
 	}
 
 	.ham:after {
 		content: "";
 		display: block;
-		background: black;
+		background: red;
 		position: absolute;
 		bottom: 0;
 	}
@@ -425,6 +445,6 @@ footer {
 /*The following media query targets the screen sizes that are less than 768px*/
 @media only screen and (max-width: 768px) {
 	footer {
-		background: #FFEB3B;
+		background: #454545 ;
 	}
 }
