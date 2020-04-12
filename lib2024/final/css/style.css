@@ -55,7 +55,9 @@ table {
 	display: table;
 	clear: both;
 }
-
+main {
+	background-image: url("../img/main-bg.png");
+}
 
 /*
 	Color Pallete
