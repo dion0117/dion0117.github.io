@@ -309,12 +309,27 @@ header {
 	width:100%;
 	box-sizing: border-box;
 }*/
+.first-p {
+	width: 30%;
+	float: right;
+}
+.second-p {
+	width: 30%;
+	float: right;
+}
+table {
+	width: 100%;
+	padding: 20px;
+}
 aside {
 	float: right;
 	padding: 15px;
-	width: 30%;
+	width: 20%;
 	box-sizing: border-box;
 }
+#results {
+	float:right;
+} 
 
 .js-color {
 	width: 30%;
@@ -445,6 +460,5 @@ footer {
 /*The following media query targets the screen sizes that are less than 768px*/
 @media only screen and (max-width: 768px) {
 	footer {
-		background: #454545 ;
+		background: #454545;
 	}
-}
