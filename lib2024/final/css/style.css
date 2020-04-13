@@ -44,6 +44,15 @@ q:before, q:after {
 	content: none;
 }
 table {
+
+	border-collapse: collapse;
+}
+table, th, tr, td, tbody {
+  border: 1px solid #ccc;
+}
+table {
+	margin:0 auto;
+}
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -70,6 +79,10 @@ h1  {
     font-family: 'Aclonica';font-size: 22px;
     color: #72a9ae;
 }
+#navh {
+	background: #72a9ae;
+	width: 100%;
+} 
 thead {
 	 color: #72a9ae;
 }
@@ -318,8 +331,9 @@ header {
 	float: right;
 }
 table {
-	width: 100%;
-	padding: 20px;
+	width: 80%;
+ 	
+
 }
 aside {
 	float: right;
