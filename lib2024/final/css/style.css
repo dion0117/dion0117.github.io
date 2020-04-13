@@ -75,11 +75,11 @@ li {
 body {
 	font-family: sans-serif;
 }
-
+/*subtle background*/
 main {
 	background-image: url("../img/main-bg.png");
 }
-
+/*these are to add teal color to header and titles*/
 h1  {
     font-family: 'Aclonica';font-size: 22px;
     color: #72a9ae;
@@ -157,6 +157,7 @@ div#results {
 .quick-links {
 	padding: 5%;
 }
+/*these are to position footer elements*/
 .footer-links {
 	clear: left;
 	padding: 5%;
@@ -206,21 +207,19 @@ div#results {
 #results {
 	position: absolute;
 	width: 30%;
-	/*display: none;*/
-	/*box shadow is used to add shadow to the HTML elements, giving them a 3d effect*/
-	/*box shadow : left-offset top-offset blur color*/
+	/*box shadow*/
 	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 }
 
-/*This piece of CSS is used to make sub-nav show when the main li is hovered */
-/* > is called the direct child selector*/
+/* CSS for sub-nav when cursor hovered on main li  */
+
 .desktop-nav > ul > li:hover .sub-nav {
 	display: block;
 }
 
 .ham {
 	float: right;
-	/*background: #BBDEFB;*/
+	
 }
 
 .ham {
@@ -296,10 +295,11 @@ div#results {
 table {
 	width: 90%;
 }
+/*this is to seperate the mtitle*/
 #mtitle	{
 	padding-top: 1%;
 }
-
+/* this is to position the bridge image to the right of p*/
 aside {
 	float: right;
 	padding: 15px;
@@ -307,6 +307,8 @@ aside {
 	box-sizing: border-box;
 	position: relative;
 	bottom: 120px;
+
+/*this is to position the profile/results box*/
 }
 #results {
 	float:right;
@@ -318,6 +320,7 @@ footer {
 	width: 100%;
 	box-sizing: border-box;
 }
+/*this is to help keep the site fluid for different sizes*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	header {
 		
