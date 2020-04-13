@@ -49,6 +49,21 @@ table {
 	border-spacing: 0;
 }
 
+table, th, tr, td, tbody {
+  border: 1px solid #ccc;
+}
+table {
+	margin:0 auto;
+}
+#nav {
+	border-collapse: collapse;
+	border-spacing: 0;
+	float: left;
+}
+
+li {
+	margin:0 auto;
+}
 /*CSS clearfix*/
 
 .clearfix:after {
@@ -73,7 +88,17 @@ h1  {
 .nav {
 	background: #72a9ae;
 	width: 100%;
+}
+li {
 
+}
+
+thead {
+	 color: #72a9ae;
+}
+h2 {
+	color: #72a9ae;
+}
 /** Form Style **/
 
 form {
@@ -126,3 +151,169 @@ div#results {
 #results.reveal span, #results.reveal a {
 	opacity: 1;
 }
+
+/************************
+		MOBILE FIRST
+************************/
+
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
+.col-main, .col-footer, 
+}
+
+/* Header styles
+header {*/
+
+}
+.desktop-nav {
+	clear: both;
+	display: none;
+}
+
+.desktop-nav ul {
+	width:100%;
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 25%;
+	padding: 10px;
+	float: left;
+	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
+	position: relative;
+}
+
+/*Target the first child and add border-top-left, border-bottom-left radius*/
+.desktop-nav li:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+/*target the last child and add border-top-right and border-top-left radius*/
+.desktop-nav li:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+.desktop-nav  {
+	display: block;
+	/*box-sizing: border-box;
+	padding: 10px;
+	border-left: 2px solid #444;*/
+	background: #72a9ae;
+}
+
+/* Target the first child and remove border-left from the a tag contained in that li*/
+.desktop-nav li:first-child a {
+	border-left: 0;
+} 
+
+.desktop-nav li .sub-nav li {
+	width: 100%;
+}
+
+/*.desktop-nav li .sub-nav li a {
+
+	background: #BBDEFB;
+	border-left: none;
+	border-bottom: 2px solid #444;
+}*/
+#results {
+	position: absolute;
+	width: 30%;
+	/*display: none;*/
+	/*box shadow is used to add shadow to the HTML elements, giving them a 3d effect*/
+	/*box shadow : left-offset top-offset blur color*/
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+/*This piece of CSS is used to make sub-nav show when the main li is hovered */
+/* > is called the direct child selector*/
+.desktop-nav > ul > li:hover .sub-nav {
+	display: block;
+}
+
+.ham {
+	float: right;
+	/*background: #BBDEFB;*/
+}
+
+.ham {
+		
+		height: 15px;
+		margin:15px;
+		padding-top: 5px;
+		position: relative;
+		float: right;
+		/*this is used to create a pointer for element*/
+		cursor: pointer;
+	}
+
+	.ham, .ham:before, .ham:after {
+		width: 30px;
+		border-top: 5px solid black;
+	}
+
+	.ham:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black;
+	}
+
+	.ham:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		bottom: 0;
+	}
+
+.mobile-nav {
+	width:100%;
+	clear: both;
+	position: absolute;
+	display: none;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+	
+}
+
+.mobile-nav li {
+	box-sizing: border-box;
+	width:100%;
+	padding: 10px;
+	background: #72a9ae;
+	border-bottom: 2px solid #121212;
+
+}
+
+.first-p {
+	width: 60%;
+	float: left;
+}
+.second-p {
+	width: 60%;
+	float: left;
+}
+table {
+	width: 80%;
+ 	
+
+}
+aside {
+	float: right;
+	padding: 15px;
+	width: 30%;
+	box-sizing: border-box;
+}
+#results {
+	float:right;
+} 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	header {
+		
+	}
+}
+/*@media only screen and (min-width: 768px) {*/
+	

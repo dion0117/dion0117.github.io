@@ -172,7 +172,7 @@ header {
 	border-radius: 0 10px 10px 0;
 }
 
-#h-nav  {
+.desktop-nav  {
 	display: block;
 	/*box-sizing: border-box;
 	padding: 10px;
