@@ -64,7 +64,7 @@ table, th, tr, td, tbody {
 li {
 	margin:0 auto;
 }
-/*CSS clearfix*/
+
 
 .clearfix:after {
 	content: "";
@@ -89,9 +89,6 @@ h1  {
 	height: 100px;
 	background: #72a9ae;
 	width: 100%;
-}
-li {
-
 }
 
 thead {
@@ -175,7 +172,9 @@ div#results {
 
 .desktop-nav {
 	clear: both;
-	display: none;
+	display: block;
+	background: #72a9ae;
+	width: 100%;
 }
 
 .desktop-nav ul {
@@ -187,40 +186,23 @@ div#results {
 	width: 15%;
 	padding: 5px;
 	float: left;
-	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
 	position: relative;
-}
 
-/*Target the first child and add border-top-left, border-bottom-left radius*/
-.desktop-nav li:first-child {
+}.desktop-nav li:first-child {
 	border-radius: 10px 0 0 10px;
 }
 
-/*target the last child and add border-top-right and border-top-left radius*/
+
 .desktop-nav li:last-child {
 	border-radius: 0 10px 10px 0;
 }
 
-.desktop-nav  {
-	display: block;
-	background: #72a9ae;
-}
-
-/* Target the first child and remove border-left from the a tag contained in that li
-.desktop-nav li:first-child a {
-	border-left: 0;
-} */
 
 .desktop-nav li .sub-nav li {
 	width: 100%;
 }
 
-/*.desktop-nav li .sub-nav li a {
 
-	background: #BBDEFB;
-	border-left: none;
-	border-bottom: 2px solid #444;
-}*/
 #results {
 	position: absolute;
 	width: 30%;
@@ -229,9 +211,7 @@ div#results {
 	/*box shadow : left-offset top-offset blur color*/
 	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 }
-.desktop-nav {
-	width: 100%;
-}
+
 /*This piece of CSS is used to make sub-nav show when the main li is hovered */
 /* > is called the direct child selector*/
 .desktop-nav > ul > li:hover .sub-nav {
@@ -320,7 +300,6 @@ table {
 	padding-top: 1%;
 }
 
-}
 aside {
 	float: right;
 	padding: 15px;
@@ -344,5 +323,5 @@ footer {
 		
 	}
 }
-/*@media only screen and (min-width: 768px) {*/
+
 	
