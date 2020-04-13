@@ -152,18 +152,6 @@ div#results {
 	opacity: 1;
 }
 
-/************************
-		MOBILE FIRST
-************************/
-
-/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
-.col-main, .col-footer, 
-}
-
-/* Header styles
-header {*/
-
-}
 .desktop-nav {
 	clear: both;
 	display: none;
@@ -261,7 +249,7 @@ header {*/
 	.ham:after {
 		content: "";
 		display: block;
-		background: black;
+		background: red;
 		position: absolute;
 		bottom: 0;
 	}
@@ -291,13 +279,20 @@ header {*/
 .first-p {
 	width: 60%;
 	float: left;
+	padding: 1%;
 }
 .second-p {
 	width: 60%;
 	float: left;
+	padding: 1%;
 }
+#sched {
+	float: left;
+	padding: 3%;
+}
+
 table {
-	width: 80%;
+	width: 90%;
  	
 
 }
@@ -306,6 +301,8 @@ aside {
 	padding: 15px;
 	width: 30%;
 	box-sizing: border-box;
+	position: relative;
+	bottom: 120px;
 }
 #results {
 	float:right;
