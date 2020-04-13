@@ -1,6 +1,5 @@
-@import url("overlay-loader.css");
-
-/*http://meyerweb.com/eric/tools/css/reset/ 
+@charset "utf-8";
+ /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -45,25 +44,19 @@ q:before, q:after {
 	content: none;
 }
 table {
-	margin:0 auto;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
+	border-collapse: collapse;
+}
 table, th, tr, td, tbody {
   border: 1px solid #ccc;
 }
-
-
-#nav {
-	border-collapse: collapse;
-	border-spacing: 0;
-	float: left;
-}
-
-li {
+table {
 	margin:0 auto;
 }
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*CSS clearfix*/
 
 .clearfix:after {
@@ -71,107 +64,85 @@ li {
 	display: table;
 	clear: both;
 }
-
-body {
-	font-family: sans-serif;
-}
+/* #1 Regular Weight 
+@font-face {
+	font-family: "FamilyName";
+	font-style: normal;
+	font-weight: normal;
+	src: url("[url to the regular version]");
+}*/
 
 main {
 	background-image: url("../img/main-bg.png");
 }
-
 h1  {
     font-family: 'Aclonica';font-size: 22px;
     color: #72a9ae;
 }
-
-#mobile-nav, #desktop-nav {
-	height: 100px;
+#navh {
 	background: #72a9ae;
 	width: 100%;
-}
-li {
-
-}
-
+} 
 thead {
 	 color: #72a9ae;
 }
 h2 {
 	color: #72a9ae;
 }
-/** Form Style **/
 
-form {
-	max-width: 30%;
+/*
+h-nav, h-navtwo, main, footer
+	@font-face {
+  font-family: ;
+  src: url(css/fonts);
+
+ }*//*
+.container {
+	background: #72a9ae;
+}*/
+/*
+	Color Pallete
+
+	Primary Blue : #1976D2;
+	Light blue : #BBDEFB;
+	Primary Text : #212121;
+	Gray : #757575;
+	Orange : #FF5722;
+	Red : #F44336;
+	Yellow : #FFEB3B;
+*/
+
+/************************
+		MOBILE FIRST
+************************/
+
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
+.col-main, .col-footer, img {
+	width:100%;
+}
+
+/* Header styles */ 
+header {
+
+}
+
+/*.logo {
 	float: left;
-	margin: 20px auto;
+	width:120px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #1976D2;
+	/*box-sizing border box makes the width adjust according to padding
+}
+*/
+
+
+/*.page-title {
+	float: left;
+	width: calc(100%);
+	box-sizing: border-box;
 	padding: 20px;
-	
-}
-
-input[type=text], input[type=email] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-button {
-  width: 30%;
-  color: blue;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-	background: #283593;
-}
-
-
-div#results {
-  float: left;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  max-width: 500px;
-  margin: 0 auto;
-  position: relative;
-  left: 800px;
-  bottom: 450px;
-}
-
-#results span, #results a {
-	opacity: 0;
-	transition: all 0.5s ease-out;
-	transition-delay: 1s;
-}
-
-#results.reveal span, #results.reveal a {
-	opacity: 1;
-}
-
-.quick-links {
-	padding: 5%;
-}
-.footer-links {
-	clear: left;
-	padding: 5%;
-	position: relative;
-	left: 250px;
-	bottom: 65px;
-}
-#footer-address {
-	float: right;
-	position: relative;
-	bottom: 180px;
-}
+}*/
 
 .desktop-nav {
 	clear: both;
@@ -184,8 +155,8 @@ div#results {
 
 .desktop-nav li {
 	box-sizing: border-box;
-	width: 15%;
-	padding: 5px;
+	width: 25%;
+	padding: 10px;
 	float: left;
 	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
 	position: relative;
@@ -203,13 +174,16 @@ div#results {
 
 .desktop-nav  {
 	display: block;
+	/*box-sizing: border-box;
+	padding: 10px;
+	border-left: 2px solid #444;*/
 	background: #72a9ae;
 }
 
-/* Target the first child and remove border-left from the a tag contained in that li
+/* Target the first child and remove border-left from the a tag contained in that li*/
 .desktop-nav li:first-child a {
 	border-left: 0;
-} */
+} 
 
 .desktop-nav li .sub-nav li {
 	width: 100%;
@@ -221,6 +195,7 @@ div#results {
 	border-left: none;
 	border-bottom: 2px solid #444;
 }*/
+
 #results {
 	position: absolute;
 	width: 30%;
@@ -229,9 +204,7 @@ div#results {
 	/*box shadow : left-offset top-offset blur color*/
 	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 }
-.desktop-nav {
-	width: 100%;
-}
+
 /*This piece of CSS is used to make sub-nav show when the main li is hovered */
 /* > is called the direct child selector*/
 .desktop-nav > ul > li:hover .sub-nav {
@@ -269,7 +242,7 @@ div#results {
 	.ham:after {
 		content: "";
 		display: block;
-		background: red;
+		background: black;
 		position: absolute;
 		bottom: 0;
 	}
@@ -291,34 +264,23 @@ div#results {
 	box-sizing: border-box;
 	width:100%;
 	padding: 10px;
-	background: #72a9ae;
+	background: lightgreen;
 	border-bottom: 2px solid #121212;
 
 }
 
+
 .first-p {
 	width: 60%;
 	float: left;
-	padding: 1%;
 }
 .second-p {
 	width: 60%;
 	float: left;
-	padding-bottom: 2%;
 }
-#sched {
-	float: left;
-	padding-top: 3%;
-	position: relative;
-	right: 830px;
-}
-
 table {
-	width: 90%;
-}
-#mtitle	{
-	padding-top: 1%;
-}
+	width: 80%;
+ 	
 
 }
 aside {
@@ -326,23 +288,139 @@ aside {
 	padding: 15px;
 	width: 30%;
 	box-sizing: border-box;
-	position: relative;
-	bottom: 120px;
 }
 #results {
 	float:right;
 } 
+
+.js-color {
+	width: 30%;
+	margin: 1%;
+	height: 150px;
+	background: blue;
+	float: left;
+}
+
 /*footer styles*/
 footer {
-	background: #454545;
+	background: #F44336;
 	padding: 15px;
 	width: 100%;
 	box-sizing: border-box;
 }
+
+.company-info {
+	background: #1976D2;
+}
+
+.links {
+	background: #FFEB3B;
+}
+
+.social-media {
+	background: #757575;
+}
+
+/*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-	header {
-		
+	/*header {
 	}
 }
-/*@media only screen and (min-width: 768px) {*/
+
+/*This media query targets, tablet and above*/
+@media only screen and (min-width: 768px) {
 	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+
+		max-width: 1280px;
+		margin: 0 auto;
+
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+
+	.mobile-nav-container {
+		display: none;
+	}
+	.mobile-nav {
+		display: none;
+	}
+
+	.ham {
+		display: none;
+		height: 15px;
+		margin:15px;
+		padding-top: 5px;
+		position: relative;
+		float: right;
+		cursor: pointer;
+	}
+
+	.ham, .ham:before, .ham:after {
+		width: 30px;
+		border-top: 5px red;
+	}
+
+	.ham:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black ;
+	}
+
+	.ham:after {
+		content: "";
+		display: block;
+		background: red;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.site-content {
+		float: left;
+		width: 70%;
+		box-sizing: border-box;
+	}
+
+	.site-sidebar {
+		float: left;
+		width: 30%;
+		box-sizing: border-box;
+	}
+
+	/*reducing opacity for the img-slide-thumb inactive elements*/
+	.image-gallery .img-slide-thumb {
+		width: 33%;
+		padding: 10px;
+		box-sizing: border-box;
+		float: left;
+		box-shadow: none;
+	}
+
+
+	.col-footer {
+		width: 31%;
+		/*total width = 31% + 1%(left margin) + 1% (right margin) */
+		box-sizing: border-box;
+		/*border box adjusts the width according to the padding only and does not consider margins*/
+		/*Therefore the space used by margins should be manually adjusted in the width declaration*/
+		margin: 0 1%;
+		padding: 10px;
+		float: left;
+	}
+}
+
+/*Desktop First Media Query*/
+/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
+/*These media queries will target the screen sizes for smaller devices*/
+/*The following media query targets the screen sizes that are less than 768px*/
+@media only screen and (max-width: 768px) {
+	footer {
+		background: #454545;
+	}
